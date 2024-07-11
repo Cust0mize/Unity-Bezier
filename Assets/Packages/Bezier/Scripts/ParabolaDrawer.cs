@@ -1,3 +1,4 @@
+using Assets.Packages.Bezier.Scripts.Models;
 using Assets.Scripts.Games.Free.ID29.Bezier.Mono;
 using UnityEngine;
 

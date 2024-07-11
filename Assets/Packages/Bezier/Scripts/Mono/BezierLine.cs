@@ -1,7 +1,12 @@
-﻿using UnityEngine;
+﻿using Assets.Packages.Bezier.Scripts.Gizmo;
+using Assets.Packages.Bezier.Scripts.Models;
+using Assets.Packages.Bezier.Scripts.Mono;
+using UnityEngine;
 
 namespace Assets.Scripts.Games.Free.ID29.Bezier.Mono {
+#if UNITY_EDITOR
     [ExecuteAlways, RequireComponent(typeof(BezierGizmosSettings))]
+#endif
     public class BezierLine : MonoBehaviour {
         [SerializeField] private BezierResolutionSettings _resolutionSettings;
         [SerializeField] private OffsetSettings _offsetSettings;
@@ -29,6 +34,7 @@ namespace Assets.Scripts.Games.Free.ID29.Bezier.Mono {
             GetComponent<BezierGizmosSettings>().Init(BezierLineModel);
         }
 
+#if UNITY_EDITOR
         private void OnValidate() {
             StartInit();
         }
@@ -62,5 +68,6 @@ namespace Assets.Scripts.Games.Free.ID29.Bezier.Mono {
                 }
             }
         }
+#endif
     }
 }
