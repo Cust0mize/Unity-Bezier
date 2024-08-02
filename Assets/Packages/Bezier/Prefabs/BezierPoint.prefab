@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 80077840738491427}
-  - component: {fileID: 8186653441612797734}
+  - component: {fileID: 8224629190614297402}
   m_Layer: 0
   m_Name: BezierPoint
   m_TagString: Untagged
@@ -96,7 +96,7 @@ Transform:
   - {fileID: 1356678403079947998}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8186653441612797734
+--- !u!114 &8224629190614297402
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8324402766752323643}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ac121249088d8744959c5013960df55, type: 3}
+  m_Script: {fileID: 11500000, guid: 23a0133dc37375e4cbdb45e4e07f5b98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _mainPoint: {fileID: 2316203923981376119}

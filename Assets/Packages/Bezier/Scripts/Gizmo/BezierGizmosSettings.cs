@@ -1,4 +1,5 @@
-﻿using Assets.Packages.Bezier.Scripts.Models;
+﻿#if UNITY_EDITOR
+using Assets.Packages.Bezier.Scripts.Models;
 using UnityEngine;
 
 namespace Assets.Packages.Bezier.Scripts.Gizmo {
@@ -6,6 +7,7 @@ namespace Assets.Packages.Bezier.Scripts.Gizmo {
         public BezierLineModel BezierLineModel { get; private set; }
 
         [SerializeField] private bool _disableAll;
+        [field: SerializeField] public float HandleSize { get; private set; }
 
         [Header("Center Sphere Settings")]
         [SerializeField] private bool _showCenterSphere;
@@ -35,13 +37,16 @@ namespace Assets.Packages.Bezier.Scripts.Gizmo {
             BezierLineModel = bezierLineModel;
         }
 
-#if UNITY_EDITOR
+        public void SelectedLine() {
+            ShowCenterPoint(Color.red, _centerSphereRadius * 1.5f);
+        }
+
         private void OnDrawGizmos() {
             if (_disableAll || Application.isPlaying) {
                 return;
             }
 
-            ShowCenterPoint();
+            ShowCenterPoint(_centerLineColor, _centerSphereRadius);
             ShowPerpendicularPoint();
             ShowInversePerpendicularPoint();
             ShowLineBetweenPoint();
@@ -57,8 +62,10 @@ namespace Assets.Packages.Bezier.Scripts.Gizmo {
 
                 for (int vertexIndex = 0; vertexIndex < BezierLineModel.ResolutionSettings.GetResolutionByIndex(elementIndex); vertexIndex++) {
                     Gizmos.color = _anchorLineColor;
-                    Gizmos.DrawLine(bezierElementModel.StartPoint.MainPointPosition, bezierElementModel.StartPoint.HelpPointPosition);
-                    Gizmos.DrawLine(bezierElementModel.EndPoint.MainPointPosition, bezierElementModel.EndPoint.HelpPointPosition);
+                    BezierPointModel startPointModel = bezierElementModel.GetPoint(BezierPointType.Start);
+                    BezierPointModel endPointModel = bezierElementModel.GetPoint(BezierPointType.End);
+                    Gizmos.DrawLine(startPointModel.MainPointPosition, startPointModel.HelpPointPosition);
+                    Gizmos.DrawLine(endPointModel.MainPointPosition, endPointModel.HelpPointPosition);
                 }
             }
         }
@@ -110,13 +117,13 @@ namespace Assets.Packages.Bezier.Scripts.Gizmo {
             Gizmos.DrawSphere(center, radius);
         }
 
-        private void ShowCenterPoint() {
+        private void ShowCenterPoint(Color color, float radius) {
             if (_showCenterSphere) {
                 for (int i = 0; i < BezierLineModel.PointLength; i++) {
-                    ShowSpherePoint(BezierLineModel.GetBezierPoint2DByIndex(i).VerticesPoint, _centerLineColor, _centerSphereRadius);
+                    ShowSpherePoint(BezierLineModel.GetBezierPoint2DByIndex(i).VerticesPoint, color, radius);
                 }
             }
         }
-#endif
     }
 }
+#endif

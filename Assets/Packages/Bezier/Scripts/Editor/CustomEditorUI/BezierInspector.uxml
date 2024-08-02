@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Editor/UI%20Toolkit/Games/ID1/FieldStyle.uss?fileID=7433441132597879392&amp;guid=04f974d2b6917764885a1630bf5ac1e9&amp;type=3#FieldStyle" />
+    <ui:VisualElement style="flex-grow: 1;">
+        <ui:Button text="Set Line" parse-escape-sequences="true" display-tooltip-when-elided="true" binding-path="_setLine" name="SetLineButton" class="bezierButton" />
+        <ui:Button text="Magnet" parse-escape-sequences="true" display-tooltip-when-elided="true" binding-path="_magnet" name="Magnet" class="bezierButton" />
+        <ui:Button text="Set Line To Start" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SetLineToStart" binding-path="_setLineToStart" class="bezierButton" />
+        <ui:Button text="Set Line Start And Magnet" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SetLineStartAndMagnet" binding-path="_setLineStartAndMagnet" class="bezierButton" />
+        <ui:Button text="Connect all" parse-escape-sequences="true" display-tooltip-when-elided="true" name="ConnectAll" binding-path="_setLineStartAndMagnet" class="bezierButton" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,7 +1,6 @@
-﻿#if UNITY_EDITOR
+﻿using Assets.Packages.Bezier.Scripts.Models;
 using UnityEngine;
 using UnityEditor;
-using Assets.Packages.Bezier.Scripts.Models;
 
 namespace Assets.Packages.Bezier.Scripts.Gizmo {
     [CustomEditor(typeof(BezierGizmosSettings))]
@@ -19,18 +18,18 @@ namespace Assets.Packages.Bezier.Scripts.Gizmo {
             for (int elementIndex = 0; elementIndex < _bezierLineModel.ElementsLength; elementIndex++) {
                 bool isShowStart = elementIndex == 0;
 
-                BezierPointModel startPointModel = _bezierLineModel.GetAnchornPoint(elementIndex, 0);
-                BezierPointModel endPointModel = _bezierLineModel.GetAnchornPoint(elementIndex, 1);
+                BezierPointModel startPointModel = _bezierLineModel.GetBezierPointModel(elementIndex, BezierPointType.Start);
+                BezierPointModel endPointModel = _bezierLineModel.GetBezierPointModel(elementIndex, BezierPointType.End);
 
                 Vector2 updateStartPosition = default;
 
                 if (isShowStart) {
-                    updateStartPosition = Handles.FreeMoveHandle(startPointModel.MainPointPosition, 0.1f, Vector3.one, Handles.SphereHandleCap);
+                    updateStartPosition = Handles.FreeMoveHandle(startPointModel.MainPointPosition, _target.HandleSize, Vector3.one, Handles.SphereHandleCap);
                 }
 
-                Vector3 updateStartTangentPosition = Handles.FreeMoveHandle(startPointModel.HelpPointPosition, 0.1f, Vector3.one, Handles.SphereHandleCap);
-                Vector3 updateEndPosition = Handles.FreeMoveHandle(endPointModel.MainPointPosition, 0.1f, Vector3.one, Handles.SphereHandleCap);
-                Vector3 updateEndTangentPosition = Handles.FreeMoveHandle(endPointModel.HelpPointPosition, 0.1f, Vector3.one, Handles.SphereHandleCap);
+                Vector3 updateStartTangentPosition = Handles.FreeMoveHandle(startPointModel.HelpPointPosition, _target.HandleSize, Vector3.one, Handles.SphereHandleCap);
+                Vector3 updateEndPosition = Handles.FreeMoveHandle(endPointModel.MainPointPosition, _target.HandleSize, Vector3.one, Handles.SphereHandleCap);
+                Vector3 updateEndTangentPosition = Handles.FreeMoveHandle(endPointModel.HelpPointPosition, _target.HandleSize, Vector3.one, Handles.SphereHandleCap);
 
                 if (isShowStart) {
                     startPointModel.UpdateMainPosition(updateStartPosition);
@@ -43,4 +42,3 @@ namespace Assets.Packages.Bezier.Scripts.Gizmo {
         }
     }
 }
-#endif

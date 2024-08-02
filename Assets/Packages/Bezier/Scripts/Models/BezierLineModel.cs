@@ -85,15 +85,20 @@ namespace Assets.Packages.Bezier.Scripts.Models {
             return result;
         }
 
-        public Bezier2DPoint GetNearPoint(Vector2 inputPoint, out float minDistance, bool isStart, float tolerance = 0.01f, int maxIterations = 1000) {
+        public Bezier2DPoint GetNearPoint(Vector2 inputPoint, out float minDistance, BezierPointType bezierPointType, float tolerance = 0.01f, int maxIterations = 1000) {
             float time = GetTimeForPoint(inputPoint, tolerance, maxIterations);
-            List<Bezier2DPoint> bezierPoints = GetPointsToTime(time, isStart);
+            List<Bezier2DPoint> bezierPoints = GetPointsToTime(time, bezierPointType);
             minDistance = Vector2.Distance(inputPoint, bezierPoints[bezierPoints.Count - 1].VerticesPoint);
             return bezierPoints[bezierPoints.Count - 1];
         }
 
-        public BezierPointModel GetAnchornPoint(int elementIndex, int pointIndex) {
-            return _bezierElementModel[elementIndex].GetAnchorPoint(pointIndex);
+        public float GetDistanceByPoint(Vector3 inputPoint, float time, DistanceType distanceType) {
+            Bezier2DPoint targetPoint = Get2DPoint(time);
+            return distanceType == DistanceType.Vector3 ? Vector3.Distance(inputPoint, targetPoint.VerticesPoint) : Vector2.Distance(inputPoint, targetPoint.VerticesPoint);
+        }
+
+        public BezierPointModel GetBezierPointModel(int elementIndex, BezierPointType bezierPointType) {
+            return _bezierElementModel[elementIndex].GetPoint(bezierPointType);
         }
 
         public Bezier2DPoint Get2DPoint(float time) {
@@ -121,16 +126,15 @@ namespace Assets.Packages.Bezier.Scripts.Models {
             return helpPoint;
         }
 
-        public List<Bezier2DPoint> GetPointsToTime(float time, bool isStart, float step = 0.01f) {
+        public List<Bezier2DPoint> GetPointsToTime(float time, BezierPointType bezierPointType, float step = 0.01f) {
             List<Bezier2DPoint> lastPoints = new();
 
-            if (isStart) {
+            if (bezierPointType == BezierPointType.Start) {
                 lastPoints.AddRange(GetPointsUpToTime(time, step));
                 return lastPoints;
             }
             else {
-                float maxTime = ElementsLength;
-                lastPoints.AddRange(GetPointsDownToTime(maxTime, time, step));
+                lastPoints.AddRange(GetPointsDownToTime(ElementsLength, time, step));
                 return lastPoints;
             }
         }
@@ -168,6 +172,16 @@ namespace Assets.Packages.Bezier.Scripts.Models {
             return _bezier2dPoint[index];
         }
 
+        public Vector3[] GetAllPoint() {
+            Vector3[] results = new Vector3[PointLength];
+
+            for (int i = 0; i < PointLength; i++) {
+                results[i] = _bezier2dPoint[i].VerticesPoint;
+            }
+
+            return results;
+        }
+
         private List<Bezier2DPoint> GetPointsUpToTime(float time, float step = 0.01f) {
             List<Bezier2DPoint> points = new List<Bezier2DPoint>();
 
@@ -182,7 +196,6 @@ namespace Assets.Packages.Bezier.Scripts.Models {
         private List<Bezier2DPoint> GetPointsDownToTime(float maxTime, float time, float step = 0.01f) {
             List<Bezier2DPoint> points = new List<Bezier2DPoint>();
 
-
             for (float stepTime = maxTime; stepTime > time; stepTime -= step) {
                 points.Add(Get2DPoint(stepTime));
             }
@@ -195,10 +208,12 @@ namespace Assets.Packages.Bezier.Scripts.Models {
             bezierElementTime = Mathf.Clamp01(bezierElementTime);
             float oneMinusT = 1f - bezierElementTime;
 
-            Vector2 p0 = bezierElementModel.GetAnchorPoint(0).MainPointPosition;
-            Vector2 p1 = bezierElementModel.GetAnchorPoint(0).HelpPointPosition;
-            Vector2 p2 = bezierElementModel.GetAnchorPoint(1).HelpPointPosition;
-            Vector2 p3 = bezierElementModel.GetAnchorPoint(1).MainPointPosition;
+            BezierPointModel startPoint = bezierElementModel.GetPoint(BezierPointType.Start);
+            BezierPointModel endPoint = bezierElementModel.GetPoint(BezierPointType.End);
+            Vector2 p0 = startPoint.MainPointPosition;
+            Vector2 p1 = startPoint.HelpPointPosition;
+            Vector2 p2 = endPoint.HelpPointPosition;
+            Vector2 p3 = endPoint.MainPointPosition;
 
             return oneMinusT * oneMinusT * oneMinusT * p0 +
             3f * oneMinusT * oneMinusT * bezierElementTime * p1 +
@@ -245,5 +260,10 @@ namespace Assets.Packages.Bezier.Scripts.Models {
             }
             return result;
         }
+    }
+
+    public enum DistanceType {
+        Vector2,
+        Vector3
     }
 }
