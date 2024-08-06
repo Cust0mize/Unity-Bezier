@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 
-namespace Assets.Packages.Bezier.Scripts.Models {
+namespace Bezier.Scripts.Models {
     public class BezierPointModel {
         public Vector3 MainPointPosition { get; private set; }
         public Vector3 HelpPointPosition { get; private set; }

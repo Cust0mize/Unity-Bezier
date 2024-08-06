@@ -1,13 +1,12 @@
-﻿using Assets.Packages.Bezier.Scripts.Models;
-using Assets.Packages.Bezier.Scripts.Mono;
-using Assets.Scripts.Extension;
+﻿using Assets.Scripts.Extension;
+using Bezier.Scripts.Models;
 using UnityEngine;
 
 #if UNITY_EDITOR
-using Assets.Packages.Bezier.Scripts.Gizmo;
+using Bezier.Scripts.Gizmo;
 #endif
 
-namespace Assets.Scripts.Games.Free.ID29.Bezier.Mono {
+namespace Bezier.Scripts.Mono {
 #if UNITY_EDITOR
     [ExecuteAlways, RequireComponent(typeof(BezierGizmosSettings))]
 #endif
@@ -142,9 +141,3 @@ namespace Assets.Scripts.Games.Free.ID29.Bezier.Mono {
 #endif
     }
 }
-
-
-
-
-//Check submodule
-

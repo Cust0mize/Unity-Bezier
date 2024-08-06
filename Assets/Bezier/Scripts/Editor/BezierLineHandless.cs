@@ -1,8 +1,9 @@
-﻿using Assets.Packages.Bezier.Scripts.Models;
+﻿using Bezier.Scripts.Models;
+using Bezier.Scripts.Gizmo;
 using UnityEngine;
 using UnityEditor;
 
-namespace Assets.Packages.Bezier.Scripts.Gizmo {
+namespace Bezier.Scripts.Editors {
     [CustomEditor(typeof(BezierGizmosSettings))]
     public class BezierLineHandless : Editor {
         private BezierLineModel _bezierLineModel;

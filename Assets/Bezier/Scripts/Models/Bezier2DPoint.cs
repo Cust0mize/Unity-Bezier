@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Packages.Bezier.Scripts.Models {
+namespace Bezier.Scripts.Models {
     public struct Bezier2DPoint {
         public Vector3 VerticesPoint { get; }
         public Vector3 HelpPoint { get; }

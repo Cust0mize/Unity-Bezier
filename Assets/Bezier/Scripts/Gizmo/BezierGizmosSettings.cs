@@ -1,8 +1,8 @@
 ﻿#if UNITY_EDITOR
-using Assets.Packages.Bezier.Scripts.Models;
+using Bezier.Scripts.Models;
 using UnityEngine;
 
-namespace Assets.Packages.Bezier.Scripts.Gizmo {
+namespace Bezier.Scripts.Gizmo {
     public class BezierGizmosSettings : MonoBehaviour {
         public BezierLineModel BezierLineModel { get; private set; }
 

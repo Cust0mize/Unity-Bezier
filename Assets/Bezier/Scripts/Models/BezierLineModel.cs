@@ -1,8 +1,8 @@
-﻿using Assets.Scripts.Games.Free.ID29.Bezier.Mono;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Bezier.Scripts.Mono;
 using UnityEngine;
 
-namespace Assets.Packages.Bezier.Scripts.Models {
+namespace Bezier.Scripts.Models {
     public class BezierLineModel {
         public int ElementsLength => _bezierElementModel.Length;
         public readonly BezierResolutionSettings ResolutionSettings;

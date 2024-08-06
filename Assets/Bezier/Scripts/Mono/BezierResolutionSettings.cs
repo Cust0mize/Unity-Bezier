@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 
-namespace Assets.Scripts.Games.Free.ID29.Bezier.Mono {
+namespace Bezier.Scripts.Mono {
     [Serializable]
     public struct BezierResolutionSettings {
         [field: SerializeField] public int StandartSegmentResolution { get; private set; }

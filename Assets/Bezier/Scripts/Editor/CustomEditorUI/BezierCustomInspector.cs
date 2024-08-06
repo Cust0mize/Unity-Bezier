@@ -1,11 +1,11 @@
-using Assets.Scripts.Games.Free.ID29.Bezier.Mono;
-using Assets.Packages.Bezier.Scripts.Models;
 using UnityEditor.UIElements;
 using UnityEngine.UIElements;
+using Bezier.Scripts.Models;
+using Bezier.Scripts.Mono;
 using UnityEditor;
 using UnityEngine;
 
-namespace Assets.Scripts.Editors {
+namespace Bezier.Scripts.Editors.CustomEditorUI {
     [CustomEditor(typeof(BezierLine))]
     public class BezierCustomInspector : Editor {
         private BezierLineModel _model;
@@ -76,30 +76,6 @@ namespace Assets.Scripts.Editors {
                 }
             }
         }
-
-        //public void SetLineStart() {
-        //    UpdateTargetAndModel();
-
-        //    for (int i = 0; i < _model.ElementsLength; i++) {
-        //        BezierPointModel startPointModel = _model.GetBezierPointModel(i, BezierPointType.Start);
-        //        BezierPointModel endPointModel = _model.GetBezierPointModel(i, BezierPointType.End);
-
-        //        // Вычисляем среднюю позицию между основной и вспомогательной точками для начала кривой
-        //        Vector3 averageStartPosition = (startPointModel.MainPointPosition + startPointModel.HelpPointPosition) / 2;
-
-        //        // Вычисляем среднюю позицию между основной и вспомогательной точками для конца кривой
-        //        Vector3 averageEndPosition = (endPointModel.MainPointPosition + endPointModel.HelpPointPosition) / 2;
-
-        //        // Обновляем позиции вспомогательных точек так, чтобы они были расположены на средней позиции
-        //        startPointModel.UpdateHelpPosition(averageStartPosition);
-        //        endPointModel.UpdateHelpPosition(averageEndPosition);
-
-        //        // Обновляем основные точки так, чтобы они были расположены на средней позиции
-        //        startPointModel.UpdateMainPosition(averageStartPosition);
-        //        endPointModel.UpdateMainPosition(averageEndPosition);
-        //    }
-        //}
-
 
         public void MagnateToPoint(BezierLine bezierLine) {
             UpdateTargetAndModel();

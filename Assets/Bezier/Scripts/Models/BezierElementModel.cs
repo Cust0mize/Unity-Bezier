@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Assets.Packages.Bezier.Scripts.Models {
+namespace Bezier.Scripts.Models {
     public class BezierElementModel {
         private Dictionary<BezierPointType, BezierPointModel> _bezierPoints = new();
 

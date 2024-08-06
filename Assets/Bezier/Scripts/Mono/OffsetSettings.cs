@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System;
 
-namespace Assets.Scripts.Games.Free.ID29.Bezier.Mono {
+namespace Bezier.Scripts.Mono {
     [Serializable]
     public struct OffsetSettings {
         [field: SerializeField] public float PerpendicularPointOffsetOfCenter { get; private set; }

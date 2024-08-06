@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Assets.Packages.Bezier.Scripts.Mono {
-
+namespace Bezier.Scripts.Mono {
 #if UNITY_EDITOR
     [ExecuteAlways]
 #endif

@@ -1,7 +1,7 @@
-﻿using Assets.Packages.Bezier.Scripts.Models;
+﻿using Bezier.Scripts.Models;
 using UnityEngine;
 
-namespace Assets.Packages.Bezier.Scripts.Mono {
+namespace Bezier.Scripts.Mono {
     public class BezierPoint : MonoBehaviour {
         [SerializeField] private Transform _mainPoint;
         [SerializeField] private Transform _helpPoint;
