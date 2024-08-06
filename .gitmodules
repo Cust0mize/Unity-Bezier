@@ -1,0 +1,3 @@
+[submodule "Bezier"]
+	path = Bezier
+	url = ./Bezier
