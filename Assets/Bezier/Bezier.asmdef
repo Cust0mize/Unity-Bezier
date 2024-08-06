@@ -1,0 +1,16 @@
+{
+    "name": "Bezier",
+    "rootNamespace": "",
+    "references": [
+        "GUID:ce4dcb8646b0fdd44ba313ffcd5686b3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

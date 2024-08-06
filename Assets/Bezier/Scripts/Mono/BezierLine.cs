@@ -1,6 +1,6 @@
-﻿using Assets.Scripts.Extension;
-using Bezier.Scripts.Models;
+﻿using Bezier.Scripts.Models;
 using UnityEngine;
+using Extension;
 
 #if UNITY_EDITOR
 using Bezier.Scripts.Gizmo;
