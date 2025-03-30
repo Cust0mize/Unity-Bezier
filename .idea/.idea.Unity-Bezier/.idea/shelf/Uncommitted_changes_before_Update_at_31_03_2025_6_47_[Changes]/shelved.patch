@@ -1,0 +1,228 @@
+Index: Packages/manifest.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"dependencies\": {\r\n    \"com.unity.collab-proxy\": \"2.3.1\",\r\n    \"com.unity.feature.development\": \"1.0.1\",\r\n    \"com.unity.textmeshpro\": \"3.0.6\",\r\n    \"com.unity.timeline\": \"1.7.6\",\r\n    \"com.unity.ugui\": \"1.0.0\",\r\n    \"com.unity.visualscripting\": \"1.9.2\",\r\n    \"com.unity.modules.ai\": \"1.0.0\",\r\n    \"com.unity.modules.androidjni\": \"1.0.0\",\r\n    \"com.unity.modules.animation\": \"1.0.0\",\r\n    \"com.unity.modules.assetbundle\": \"1.0.0\",\r\n    \"com.unity.modules.audio\": \"1.0.0\",\r\n    \"com.unity.modules.cloth\": \"1.0.0\",\r\n    \"com.unity.modules.director\": \"1.0.0\",\r\n    \"com.unity.modules.imageconversion\": \"1.0.0\",\r\n    \"com.unity.modules.imgui\": \"1.0.0\",\r\n    \"com.unity.modules.jsonserialize\": \"1.0.0\",\r\n    \"com.unity.modules.particlesystem\": \"1.0.0\",\r\n    \"com.unity.modules.physics\": \"1.0.0\",\r\n    \"com.unity.modules.physics2d\": \"1.0.0\",\r\n    \"com.unity.modules.screencapture\": \"1.0.0\",\r\n    \"com.unity.modules.terrain\": \"1.0.0\",\r\n    \"com.unity.modules.terrainphysics\": \"1.0.0\",\r\n    \"com.unity.modules.tilemap\": \"1.0.0\",\r\n    \"com.unity.modules.ui\": \"1.0.0\",\r\n    \"com.unity.modules.uielements\": \"1.0.0\",\r\n    \"com.unity.modules.umbra\": \"1.0.0\",\r\n    \"com.unity.modules.unityanalytics\": \"1.0.0\",\r\n    \"com.unity.modules.unitywebrequest\": \"1.0.0\",\r\n    \"com.unity.modules.unitywebrequestassetbundle\": \"1.0.0\",\r\n    \"com.unity.modules.unitywebrequestaudio\": \"1.0.0\",\r\n    \"com.unity.modules.unitywebrequesttexture\": \"1.0.0\",\r\n    \"com.unity.modules.unitywebrequestwww\": \"1.0.0\",\r\n    \"com.unity.modules.vehicles\": \"1.0.0\",\r\n    \"com.unity.modules.video\": \"1.0.0\",\r\n    \"com.unity.modules.vr\": \"1.0.0\",\r\n    \"com.unity.modules.wind\": \"1.0.0\",\r\n    \"com.unity.modules.xr\": \"1.0.0\"\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Packages/manifest.json b/Packages/manifest.json
+--- a/Packages/manifest.json	(revision ba308454e7fc854d5e5c9c76128195b5e3e9ac10)
++++ b/Packages/manifest.json	(date 1743378340275)
+@@ -1,11 +1,11 @@
+ {
+   "dependencies": {
+-    "com.unity.collab-proxy": "2.3.1",
++    "com.unity.collab-proxy": "2.5.2",
+     "com.unity.feature.development": "1.0.1",
+-    "com.unity.textmeshpro": "3.0.6",
++    "com.unity.textmeshpro": "3.0.7",
+     "com.unity.timeline": "1.7.6",
+     "com.unity.ugui": "1.0.0",
+-    "com.unity.visualscripting": "1.9.2",
++    "com.unity.visualscripting": "1.9.4",
+     "com.unity.modules.ai": "1.0.0",
+     "com.unity.modules.androidjni": "1.0.0",
+     "com.unity.modules.animation": "1.0.0",
+Index: Packages/packages-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"dependencies\": {\r\n    \"com.unity.collab-proxy\": {\r\n      \"version\": \"2.3.1\",\r\n      \"depth\": 0,\r\n      \"source\": \"registry\",\r\n      \"dependencies\": {},\r\n      \"url\": \"https://packages.unity.com\"\r\n    },\r\n    \"com.unity.editorcoroutines\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 1,\r\n      \"source\": \"registry\",\r\n      \"dependencies\": {},\r\n      \"url\": \"https://packages.unity.com\"\r\n    },\r\n    \"com.unity.ext.nunit\": {\r\n      \"version\": \"1.0.6\",\r\n      \"depth\": 2,\r\n      \"source\": \"registry\",\r\n      \"dependencies\": {},\r\n      \"url\": \"https://packages.unity.com\"\r\n    },\r\n    \"com.unity.feature.development\": {\r\n      \"version\": \"1.0.1\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.ide.visualstudio\": \"2.0.22\",\r\n        \"com.unity.ide.rider\": \"3.0.31\",\r\n        \"com.unity.ide.vscode\": \"1.2.5\",\r\n        \"com.unity.editorcoroutines\": \"1.0.0\",\r\n        \"com.unity.performance.profile-analyzer\": \"1.2.2\",\r\n        \"com.unity.test-framework\": \"1.1.33\",\r\n        \"com.unity.testtools.codecoverage\": \"1.2.6\"\r\n      }\r\n    },\r\n    \"com.unity.ide.rider\": {\r\n      \"version\": \"3.0.31\",\r\n      \"depth\": 1,\r\n      \"source\": \"registry\",\r\n      \"dependencies\": {\r\n        \"com.unity.ext.nunit\": \"1.0.6\"\r\n      },\r\n      \"url\": \"https://packages.unity.com\"\r\n    },\r\n    \"com.unity.ide.visualstudio\": {\r\n      \"version\": \"2.0.22\",\r\n      \"depth\": 1,\r\n      \"source\": \"registry\",\r\n      \"dependencies\": {\r\n        \"com.unity.test-framework\": \"1.1.9\"\r\n      },\r\n      \"url\": \"https://packages.unity.com\"\r\n    },\r\n    \"com.unity.ide.vscode\": {\r\n      \"version\": \"1.2.5\",\r\n      \"depth\": 1,\r\n      \"source\": \"registry\",\r\n      \"dependencies\": {},\r\n      \"url\": \"https://packages.unity.com\"\r\n    },\r\n    \"com.unity.performance.profile-analyzer\": {\r\n      \"version\": \"1.2.2\",\r\n      \"depth\": 1,\r\n      \"source\": \"registry\",\r\n      \"dependencies\": {},\r\n      \"url\": \"https://packages.unity.com\"\r\n    },\r\n    \"com.unity.settings-manager\": {\r\n      \"version\": \"2.0.1\",\r\n      \"depth\": 2,\r\n      \"source\": \"registry\",\r\n      \"dependencies\": {},\r\n      \"url\": \"https://packages.unity.com\"\r\n    },\r\n    \"com.unity.test-framework\": {\r\n      \"version\": \"1.1.33\",\r\n      \"depth\": 1,\r\n      \"source\": \"registry\",\r\n      \"dependencies\": {\r\n        \"com.unity.ext.nunit\": \"1.0.6\",\r\n        \"com.unity.modules.imgui\": \"1.0.0\",\r\n        \"com.unity.modules.jsonserialize\": \"1.0.0\"\r\n      },\r\n      \"url\": \"https://packages.unity.com\"\r\n    },\r\n    \"com.unity.testtools.codecoverage\": {\r\n      \"version\": \"1.2.6\",\r\n      \"depth\": 1,\r\n      \"source\": \"registry\",\r\n      \"dependencies\": {\r\n        \"com.unity.test-framework\": \"1.0.16\",\r\n        \"com.unity.settings-manager\": \"1.0.1\"\r\n      },\r\n      \"url\": \"https://packages.unity.com\"\r\n    },\r\n    \"com.unity.textmeshpro\": {\r\n      \"version\": \"3.0.6\",\r\n      \"depth\": 0,\r\n      \"source\": \"registry\",\r\n      \"dependencies\": {\r\n        \"com.unity.ugui\": \"1.0.0\"\r\n      },\r\n      \"url\": \"https://packages.unity.com\"\r\n    },\r\n    \"com.unity.timeline\": {\r\n      \"version\": \"1.7.6\",\r\n      \"depth\": 0,\r\n      \"source\": \"registry\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.audio\": \"1.0.0\",\r\n        \"com.unity.modules.director\": \"1.0.0\",\r\n        \"com.unity.modules.animation\": \"1.0.0\",\r\n        \"com.unity.modules.particlesystem\": \"1.0.0\"\r\n      },\r\n      \"url\": \"https://packages.unity.com\"\r\n    },\r\n    \"com.unity.ugui\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.ui\": \"1.0.0\",\r\n        \"com.unity.modules.imgui\": \"1.0.0\"\r\n      }\r\n    },\r\n    \"com.unity.visualscripting\": {\r\n      \"version\": \"1.9.2\",\r\n      \"depth\": 0,\r\n      \"source\": \"registry\",\r\n      \"dependencies\": {\r\n        \"com.unity.ugui\": \"1.0.0\",\r\n        \"com.unity.modules.jsonserialize\": \"1.0.0\"\r\n      },\r\n      \"url\": \"https://packages.unity.com\"\r\n    },\r\n    \"com.unity.modules.ai\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {}\r\n    },\r\n    \"com.unity.modules.androidjni\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {}\r\n    },\r\n    \"com.unity.modules.animation\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {}\r\n    },\r\n    \"com.unity.modules.assetbundle\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {}\r\n    },\r\n    \"com.unity.modules.audio\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {}\r\n    },\r\n    \"com.unity.modules.cloth\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.physics\": \"1.0.0\"\r\n      }\r\n    },\r\n    \"com.unity.modules.director\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.audio\": \"1.0.0\",\r\n        \"com.unity.modules.animation\": \"1.0.0\"\r\n      }\r\n    },\r\n    \"com.unity.modules.imageconversion\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {}\r\n    },\r\n    \"com.unity.modules.imgui\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {}\r\n    },\r\n    \"com.unity.modules.jsonserialize\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {}\r\n    },\r\n    \"com.unity.modules.particlesystem\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {}\r\n    },\r\n    \"com.unity.modules.physics\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {}\r\n    },\r\n    \"com.unity.modules.physics2d\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {}\r\n    },\r\n    \"com.unity.modules.screencapture\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.imageconversion\": \"1.0.0\"\r\n      }\r\n    },\r\n    \"com.unity.modules.subsystems\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 1,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.jsonserialize\": \"1.0.0\"\r\n      }\r\n    },\r\n    \"com.unity.modules.terrain\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {}\r\n    },\r\n    \"com.unity.modules.terrainphysics\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.physics\": \"1.0.0\",\r\n        \"com.unity.modules.terrain\": \"1.0.0\"\r\n      }\r\n    },\r\n    \"com.unity.modules.tilemap\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.physics2d\": \"1.0.0\"\r\n      }\r\n    },\r\n    \"com.unity.modules.ui\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {}\r\n    },\r\n    \"com.unity.modules.uielements\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.ui\": \"1.0.0\",\r\n        \"com.unity.modules.imgui\": \"1.0.0\",\r\n        \"com.unity.modules.jsonserialize\": \"1.0.0\"\r\n      }\r\n    },\r\n    \"com.unity.modules.umbra\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {}\r\n    },\r\n    \"com.unity.modules.unityanalytics\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.unitywebrequest\": \"1.0.0\",\r\n        \"com.unity.modules.jsonserialize\": \"1.0.0\"\r\n      }\r\n    },\r\n    \"com.unity.modules.unitywebrequest\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {}\r\n    },\r\n    \"com.unity.modules.unitywebrequestassetbundle\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.assetbundle\": \"1.0.0\",\r\n        \"com.unity.modules.unitywebrequest\": \"1.0.0\"\r\n      }\r\n    },\r\n    \"com.unity.modules.unitywebrequestaudio\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.unitywebrequest\": \"1.0.0\",\r\n        \"com.unity.modules.audio\": \"1.0.0\"\r\n      }\r\n    },\r\n    \"com.unity.modules.unitywebrequesttexture\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.unitywebrequest\": \"1.0.0\",\r\n        \"com.unity.modules.imageconversion\": \"1.0.0\"\r\n      }\r\n    },\r\n    \"com.unity.modules.unitywebrequestwww\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.unitywebrequest\": \"1.0.0\",\r\n        \"com.unity.modules.unitywebrequestassetbundle\": \"1.0.0\",\r\n        \"com.unity.modules.unitywebrequestaudio\": \"1.0.0\",\r\n        \"com.unity.modules.audio\": \"1.0.0\",\r\n        \"com.unity.modules.assetbundle\": \"1.0.0\",\r\n        \"com.unity.modules.imageconversion\": \"1.0.0\"\r\n      }\r\n    },\r\n    \"com.unity.modules.vehicles\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.physics\": \"1.0.0\"\r\n      }\r\n    },\r\n    \"com.unity.modules.video\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.audio\": \"1.0.0\",\r\n        \"com.unity.modules.ui\": \"1.0.0\",\r\n        \"com.unity.modules.unitywebrequest\": \"1.0.0\"\r\n      }\r\n    },\r\n    \"com.unity.modules.vr\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.jsonserialize\": \"1.0.0\",\r\n        \"com.unity.modules.physics\": \"1.0.0\",\r\n        \"com.unity.modules.xr\": \"1.0.0\"\r\n      }\r\n    },\r\n    \"com.unity.modules.wind\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {}\r\n    },\r\n    \"com.unity.modules.xr\": {\r\n      \"version\": \"1.0.0\",\r\n      \"depth\": 0,\r\n      \"source\": \"builtin\",\r\n      \"dependencies\": {\r\n        \"com.unity.modules.physics\": \"1.0.0\",\r\n        \"com.unity.modules.jsonserialize\": \"1.0.0\",\r\n        \"com.unity.modules.subsystems\": \"1.0.0\"\r\n      }\r\n    }\r\n  }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Packages/packages-lock.json b/Packages/packages-lock.json
+--- a/Packages/packages-lock.json	(revision ba308454e7fc854d5e5c9c76128195b5e3e9ac10)
++++ b/Packages/packages-lock.json	(date 1743378377647)
+@@ -1,7 +1,7 @@
+ {
+   "dependencies": {
+     "com.unity.collab-proxy": {
+-      "version": "2.3.1",
++      "version": "2.5.2",
+       "depth": 0,
+       "source": "registry",
+       "dependencies": {},
+@@ -96,7 +96,7 @@
+       "url": "https://packages.unity.com"
+     },
+     "com.unity.textmeshpro": {
+-      "version": "3.0.6",
++      "version": "3.0.7",
+       "depth": 0,
+       "source": "registry",
+       "dependencies": {
+@@ -126,7 +126,7 @@
+       }
+     },
+     "com.unity.visualscripting": {
+-      "version": "1.9.2",
++      "version": "1.9.4",
+       "depth": 0,
+       "source": "registry",
+       "dependencies": {
+Index: .idea/.idea.Unity-Bezier/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"a6c273b9-7970-424e-9457-ae91543bad45\" name=\"Changes\" comment=\"\">\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scene/ExampleScene.unity\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Bezier/Scene/ExampleScene.unity\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Editor/BezierLineHandless.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Editor/BezierLineHandless.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Editor/CustomEditorUI/BezierCustomInspector.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Editor/CustomEditorUI/BezierCustomInspector.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Gizmo/BezierGizmosSettings.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Gizmo/BezierGizmosSettings.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Models/Bezier2DPoint.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Models/BezierPoint.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Models/Bezier2DPoint.cs.meta\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Models/BezierPoint.cs.meta\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Models/BezierElementModel.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Models/BezierElementModel.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Models/BezierLineModel.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Models/BezierLineModel.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierElement.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierElementView.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierElement.cs.meta\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierElementView.cs.meta\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierLine.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierLineView.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierLine.cs.meta\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierLineView.cs.meta\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierPoint.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierPointView.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierPoint.cs.meta\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierPointView.cs.meta\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierResolutionSettings.cs\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierResolutionSettings.cs.meta\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/OffsetSettings.cs\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/OffsetSettings.cs.meta\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Packages/manifest.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Packages/manifest.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Packages/packages-lock.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Packages/packages-lock.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6ff3bcb667574bf9a8630184172fcfbf176600/54/ffd9edcb/Vector2.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"MetaFilesCheckinStateConfiguration\" checkMetaFiles=\"true\" />\r\n  <component name=\"ProjectColorInfo\"><![CDATA[{\r\n  \"associatedIndex\": 6\r\n}]]></component>\r\n  <component name=\"ProjectId\" id=\"2u4UJQVt3Wh1SYX9BwuK6hMOo6c\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"Attach to Unity Editor.Attach to Unity Editor.executor\": \"Debug\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"RunOnceActivity.git.unshallow\": \"true\",\r\n    \"git-widget-placeholder\": \"master\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"settings.editor.selected.configurable\": \"preferences.pluginManager\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\" selected=\"Attach to Unity Editor.Attach to Unity Editor\">\r\n    <configuration name=\"Start Unity\" type=\"RunUnityExe\" factoryName=\"Unity Executable\">\r\n      <option name=\"EXE_PATH\" value=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.50f1\\Editor\\Unity.exe\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"-projectPath C:\\Users\\geniy\\OneDrive\\Desktop\\Unity-Bezier -debugCodeOptimization\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"C:\\Users\\geniy\\OneDrive\\Desktop\\Unity-Bezier\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"1\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Unit Tests (batch mode)\" type=\"RunUnityExe\" factoryName=\"Unity Executable\">\r\n      <option name=\"EXE_PATH\" value=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.50f1\\Editor\\Unity.exe\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"-runTests -batchmode -projectPath C:\\Users\\geniy\\OneDrive\\Desktop\\Unity-Bezier -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"C:\\Users\\geniy\\OneDrive\\Desktop\\Unity-Bezier\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"1\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Attach to Unity Editor &amp; Play\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"UNITY_ATTACH_AND_PLAY\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"projectPathOnTarget\" />\r\n      <option name=\"runtimes\">\r\n        <list />\r\n      </option>\r\n      <option name=\"selectedOptions\">\r\n        <list />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Attach to Unity Editor\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"Unity Debug\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\" ignored-value-for-modified-check=\"17136\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" value=\"17136\" />\r\n      <option name=\"projectPathOnTarget\" />\r\n      <option name=\"runtimes\">\r\n        <list>\r\n          <MonoRuntime />\r\n        </list>\r\n      </option>\r\n      <option name=\"selectedOptions\">\r\n        <list />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"a6c273b9-7970-424e-9457-ae91543bad45\" name=\"Changes\" comment=\"\" />\r\n      <created>1740364021486</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1740364021486</updated>\r\n      <workItem from=\"1740364025542\" duration=\"60000\" />\r\n      <workItem from=\"1741507271166\" duration=\"907000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnityCheckinConfiguration\" checkUnsavedScenes=\"true\" />\r\n  <component name=\"UnityProjectConfiguration\" hasMinimizedUI=\"true\" />\r\n  <component name=\"UnityProjectDiscoverer\">\r\n    <option name=\"hasUnityReference\" value=\"true\" />\r\n    <option name=\"unityProject\" value=\"true\" />\r\n    <option name=\"unityProjectFolder\" value=\"true\" />\r\n  </component>\r\n  <component name=\"UnityUnitTestConfiguration\" currentTestLauncher=\"Both\" />\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"DotNet Breakpoints\">\r\n          <url>file://$PROJECT_DIR$/Assets/Bezier/Scripts/Gizmo/BezierGizmosSettings.cs</url>\r\n          <line>120</line>\r\n          <properties documentPath=\"C:\\Users\\geniy\\OneDrive\\Desktop\\Unity-Bezier\\Assets\\Bezier\\Scripts\\Gizmo\\BezierGizmosSettings.cs\" containingFunctionPresentation=\"Method 'ShowCenterPoint'\">\r\n            <startOffsets>\r\n              <option value=\"5370\" />\r\n            </startOffsets>\r\n            <endOffsets>\r\n              <option value=\"5392\" />\r\n            </endOffsets>\r\n          </properties>\r\n          <option name=\"timeStamp\" value=\"1\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.Unity-Bezier/.idea/workspace.xml b/.idea/.idea.Unity-Bezier/.idea/workspace.xml
+--- a/.idea/.idea.Unity-Bezier/.idea/workspace.xml	(revision ba308454e7fc854d5e5c9c76128195b5e3e9ac10)
++++ b/.idea/.idea.Unity-Bezier/.idea/workspace.xml	(date 1743378454016)
+@@ -4,65 +4,46 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="a6c273b9-7970-424e-9457-ae91543bad45" name="Changes" comment="">
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scene/ExampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bezier/Scene/ExampleScene.unity" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scripts/Editor/BezierLineHandless.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bezier/Scripts/Editor/BezierLineHandless.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scripts/Editor/CustomEditorUI/BezierCustomInspector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bezier/Scripts/Editor/CustomEditorUI/BezierCustomInspector.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scripts/Gizmo/BezierGizmosSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bezier/Scripts/Gizmo/BezierGizmosSettings.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scripts/Models/Bezier2DPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bezier/Scripts/Models/BezierPoint.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scripts/Models/Bezier2DPoint.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bezier/Scripts/Models/BezierPoint.cs.meta" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scripts/Models/BezierElementModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bezier/Scripts/Models/BezierElementModel.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scripts/Models/BezierLineModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bezier/Scripts/Models/BezierLineModel.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierElement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierElementView.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierElement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierElementView.cs.meta" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierLine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierLineView.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierLine.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierLineView.cs.meta" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierPoint.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierPointView.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierPoint.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierPointView.cs.meta" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierResolutionSettings.cs" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/BezierResolutionSettings.cs.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/OffsetSettings.cs" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Bezier/Scripts/Mono/OffsetSettings.cs.meta" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+-    </list>
++    <list default="true" id="a6c273b9-7970-424e-9457-ae91543bad45" name="Changes" comment="" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="DpaMonitoringSettings">
++    <option name="firstShow" value="false" />
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="HighlightingSettingsPerFile">
++    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6ff3bcb667574bf9a8630184172fcfbf176600/1b/6ff32294/Component.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6ff3bcb667574bf9a8630184172fcfbf176600/54/ffd9edcb/Vector2.cs" root0="FORCE_HIGHLIGHTING" />
++    <setting file="mock://C:/Users/geniy/OneDrive/Desktop/Unity-Bezier/Assets/Bezier/Scripts/Models/BezierElementModel.cs" root0="SKIP_HIGHLIGHTING" />
+   </component>
+   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+-  <component name="ProjectColorInfo"><![CDATA[{
+-  "associatedIndex": 6
+-}]]></component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 6
++}</component>
+   <component name="ProjectId" id="2u4UJQVt3Wh1SYX9BwuK6hMOo6c" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "RunOnceActivity.git.unshallow": "true",
+-    "git-widget-placeholder": "master",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "settings.editor.selected.configurable": "preferences.pluginManager",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.50f1\Editor\Unity.exe" />
+@@ -93,15 +74,13 @@
+       </option>
+       <method v="2" />
+     </configuration>
+-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="17136">
++    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+       <option name="allowRunningInParallel" value="false" />
+       <option name="listenPortForConnections" value="false" />
+-      <option name="pid" value="17136" />
++      <option name="pid" />
+       <option name="projectPathOnTarget" />
+       <option name="runtimes">
+-        <list>
+-          <MonoRuntime />
+-        </list>
++        <list />
+       </option>
+       <option name="selectedOptions">
+         <list />
+@@ -118,7 +97,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1740364021486</updated>
+       <workItem from="1740364025542" duration="60000" />
+-      <workItem from="1741507271166" duration="907000" />
++      <workItem from="1741507271166" duration="2695000" />
+     </task>
+     <servers />
+   </component>
+@@ -136,23 +115,4 @@
+   <component name="VcsManagerConfiguration">
+     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+   </component>
+-  <component name="XDebuggerManager">
+-    <breakpoint-manager>
+-      <breakpoints>
+-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+-          <url>file://$PROJECT_DIR$/Assets/Bezier/Scripts/Gizmo/BezierGizmosSettings.cs</url>
+-          <line>120</line>
+-          <properties documentPath="C:\Users\geniy\OneDrive\Desktop\Unity-Bezier\Assets\Bezier\Scripts\Gizmo\BezierGizmosSettings.cs" containingFunctionPresentation="Method 'ShowCenterPoint'">
+-            <startOffsets>
+-              <option value="5370" />
+-            </startOffsets>
+-            <endOffsets>
+-              <option value="5392" />
+-            </endOffsets>
+-          </properties>
+-          <option name="timeStamp" value="1" />
+-        </line-breakpoint>
+-      </breakpoints>
+-    </breakpoint-manager>
+-  </component>
+ </project>
+\ No newline at end of file
+Index: ProjectSettings/ProjectVersion.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>m_EditorVersion: 2022.3.22f1\r\nm_EditorVersionWithRevision: 2022.3.22f1 (887be4894c44)\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ProjectSettings/ProjectVersion.txt b/ProjectSettings/ProjectVersion.txt
+--- a/ProjectSettings/ProjectVersion.txt	(revision ba308454e7fc854d5e5c9c76128195b5e3e9ac10)
++++ b/ProjectSettings/ProjectVersion.txt	(date 1743378437906)
+@@ -1,2 +1,2 @@
+-m_EditorVersion: 2022.3.22f1
+-m_EditorVersionWithRevision: 2022.3.22f1 (887be4894c44)
++m_EditorVersion: 2022.3.50f1
++m_EditorVersionWithRevision: 2022.3.50f1 (c3db7f8bf9b1)

@@ -1,0 +1,10 @@
+{
+  "name": "com.evgeny.bezier",
+  "version": "1.0.0",
+  "displayName": "Unity-Bezier-2D",
+  "unity": "2022.3",
+  "author": {
+    "name": "Evgeny",
+    "email": "geniy34692@gmail.com"
+  }
+}
