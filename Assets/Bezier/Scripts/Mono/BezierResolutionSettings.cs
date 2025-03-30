@@ -7,8 +7,8 @@ namespace Bezier.Scripts.Mono {
         [field: SerializeField] public int StandartSegmentResolution { get; private set; }
         [SerializeField] private int[] _segmentResolutions;
 
-        public BezierResolutionSettings(int standartSegmentResulution, int[] segmentsResolution) {
-            StandartSegmentResolution = standartSegmentResulution;
+        public BezierResolutionSettings(int standartSegmentResolution, int[] segmentsResolution) {
+            StandartSegmentResolution = standartSegmentResolution;
             _segmentResolutions = segmentsResolution;
         }
 

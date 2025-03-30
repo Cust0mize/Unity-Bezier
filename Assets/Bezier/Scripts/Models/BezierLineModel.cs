@@ -5,11 +5,11 @@ using UnityEngine;
 namespace Bezier.Scripts.Models {
     public class BezierLineModel {
         public int ElementsLength => _bezierElementModel.Length;
+        private readonly Dictionary<int, Vector3[]> _squarePoints = new Dictionary<int, Vector3[]>();
+        private readonly List<Bezier2DPoint> _bezier2dPoint = new List<Bezier2DPoint>();
+        private readonly BezierElementModel[] _bezierElementModel;
         public readonly BezierResolutionSettings ResolutionSettings;
         private readonly OffsetSettings _offsetSettings;
-        private BezierElementModel[] _bezierElementModel;
-        private Dictionary<int, Vector3[]> _squarePoints = new();
-        private List<Bezier2DPoint> _bezier2dPoint = new();
 
         public int PointLength => _bezier2dPoint.Count;
 
@@ -30,18 +30,6 @@ namespace Bezier.Scripts.Models {
             for (int i = 0; i < _bezier2dPoint.Count; i++) {
                 _squarePoints.Add(i, GetSquarePointFromRealTime(i));
             }
-        }
-
-        private Vector3 GetVerticesPoint(float time) {
-            int index = GetIndexByTime(time);
-
-            time = time - index;
-
-            if (time < 0.0001f) {
-                time = 0;
-            }
-
-            return GetCenterPoint(_bezierElementModel[index], time);
         }
 
         public BezierElementModel GetBezierElementModelByIndex(int index) {
@@ -72,7 +60,7 @@ namespace Bezier.Scripts.Models {
         }
 
         public List<Vector3> GetAllSquareFromCache() {
-            List<Vector3> result = new();
+            List<Vector3> result = new List<Vector3>();
 
             for (int i = 0; i < _squarePoints.Count; i++) {
                 result.AddRange(_squarePoints[i]);
@@ -85,7 +73,13 @@ namespace Bezier.Scripts.Models {
             return result;
         }
 
-        public Bezier2DPoint GetNearPoint(Vector2 inputPoint, out float minDistance, BezierPointType bezierPointType, float tolerance = 0.01f, int maxIterations = 1000) {
+        public Bezier2DPoint GetNearPoint(
+        Vector2 inputPoint,
+        out float minDistance,
+        BezierPointType bezierPointType,
+        float tolerance = 0.01f,
+        int maxIterations = 1000
+        ) {
             float time = GetTimeForPoint(inputPoint, tolerance, maxIterations);
             List<Bezier2DPoint> bezierPoints = GetPointsToTime(time, bezierPointType);
             minDistance = Vector2.Distance(inputPoint, bezierPoints[bezierPoints.Count - 1].VerticesPoint);
@@ -182,6 +176,18 @@ namespace Bezier.Scripts.Models {
             return results;
         }
 
+        private Vector3 GetVerticesPoint(float time) {
+            int index = GetIndexByTime(time);
+
+            time = time - index;
+
+            if (time < 0.0001f) {
+                time = 0;
+            }
+
+            return GetCenterPoint(_bezierElementModel[index], time);
+        }
+
         private List<Bezier2DPoint> GetPointsUpToTime(float time, float step = 0.01f) {
             List<Bezier2DPoint> points = new List<Bezier2DPoint>();
 
@@ -215,10 +221,7 @@ namespace Bezier.Scripts.Models {
             Vector2 p2 = endPoint.HelpPointPosition;
             Vector2 p3 = endPoint.MainPointPosition;
 
-            return oneMinusT * oneMinusT * oneMinusT * p0 +
-            3f * oneMinusT * oneMinusT * bezierElementTime * p1 +
-            3f * oneMinusT * bezierElementTime * bezierElementTime * p2 +
-            bezierElementTime * bezierElementTime * bezierElementTime * p3;
+            return oneMinusT * oneMinusT * oneMinusT * p0 + 3f * oneMinusT * oneMinusT * bezierElementTime * p1 + 3f * oneMinusT * bezierElementTime * bezierElementTime * p2 + bezierElementTime * bezierElementTime * bezierElementTime * p3;
         }
 
         private int GetIndexByTime(float time) {
@@ -258,6 +261,7 @@ namespace Bezier.Scripts.Models {
                     }
                 }
             }
+
             return result;
         }
     }
