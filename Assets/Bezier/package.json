@@ -1,10 +1,10 @@
 {
-  "name": "com.evgeny.bezier",
+  "name": "com.cust0mize.bezier",
   "version": "1.0.0",
-  "displayName": "Unity-Bezier-2D",
-  "unity": "2022.3",
+  "displayName": "Bezier Curves for Unity",
+  "unity": "2020.3",
   "author": {
-    "name": "Evgeny",
-    "email": "geniy34692@gmail.com"
+    "name": "Cust0mize",
+    "url": "https://github.com/Cust0mize"
   }
 }
