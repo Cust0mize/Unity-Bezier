@@ -4,7 +4,84 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6c273b9-7970-424e-9457-ae91543bad45" name="Changes" comment="" />
+    <list default="true" id="a6c273b9-7970-424e-9457-ae91543bad45" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Bezier/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Bezier/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Editor/BezierLineHandless.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Editor/BezierLineHandless.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Editor/CustomEditorUI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Editor/CustomEditorUI/BezierCustomInspector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Editor/CustomEditorUI/BezierCustomInspector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Editor/CustomEditorUI/BezierInspector.uxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Editor/CustomEditorUI/BezierInspector.uxml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Extension.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Extension/ButtonExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Extension/ButtonExtension.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Extension/Extension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Extension/Extension.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Gizmo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Gizmo/BezierGizmosSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Gizmo/BezierGizmosSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Models/Bezier2DPoint.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Models/Bezier2DPoint.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Models/BezierElementModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Models/BezierElementModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Models/BezierLineModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Models/BezierLineModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Models/BezierPointModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Models/BezierPointModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Mono.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Mono/BezierElement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Mono/BezierElement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Mono/BezierLine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Mono/BezierLine.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Mono/BezierPoint.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Mono/BezierPoint.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Mono/BezierResolutionSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Mono/BezierResolutionSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Mono/OffsetSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scripts/Mono/OffsetSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Editor/BezierLineHandless.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Editor/BezierLineHandless.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Editor/CustomEditorUI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Editor/CustomEditorUI/BezierCustomInspector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Editor/CustomEditorUI/BezierCustomInspector.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Editor/CustomEditorUI/BezierInspector.uxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Editor/CustomEditorUI/BezierInspector.uxml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Extension.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Extension/ButtonExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Extension/ButtonExtension.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Extension/Extension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Extension/Extension.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Gizmo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Gizmo/BezierGizmosSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Gizmo/BezierGizmosSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Models/Bezier2DPoint.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Models/Bezier2DPoint.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Models/BezierElementModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Models/BezierElementModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Models/BezierLineModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Models/BezierLineModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Models/BezierPointModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Models/BezierPointModel.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Mono.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Mono/BezierElement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Mono/BezierElement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Mono/BezierLine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Mono/BezierLine.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Mono/BezierPoint.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Mono/BezierPoint.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Mono/BezierResolutionSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Mono/BezierResolutionSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Mono/OffsetSettings.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Runtime/Scripts/Mono/OffsetSettings.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,18 +93,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Cust0mize"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Cust0mize&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Cust0mize/Unity-Bezier.git",
-    "accountId": "184faa75-06a3-4974-8a58-7685e321843c"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Cust0mize/Unity-Bezier.git&quot;,
+    &quot;accountId&quot;: &quot;184faa75-06a3-4974-8a58-7685e321843c&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6ff3bcb667574bf9a8630184172fcfbf176600/1b/6ff32294/Component.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/6ff3bcb667574bf9a8630184172fcfbf176600/54/ffd9edcb/Vector2.cs" root0="FORCE_HIGHLIGHTING" />
@@ -41,21 +118,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Attach to Unity Editor.Attach to Unity Editor.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.50f1\Editor\Unity.exe" />
@@ -111,6 +188,8 @@
       <workItem from="1740364025542" duration="60000" />
       <workItem from="1741507271166" duration="2695000" />
       <workItem from="1743378455356" duration="975000" />
+      <workItem from="1743379763721" duration="680000" />
+      <workItem from="1743382529435" duration="526000" />
     </task>
     <task id="LOCAL-00001" summary="update project">
       <option name="closed" value="true" />
@@ -144,7 +223,31 @@
       <option name="project" value="LOCAL" />
       <updated>1743379349858</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update package.json">
+      <option name="closed" value="true" />
+      <created>1743379777910</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743379777910</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update package.json">
+      <option name="closed" value="true" />
+      <created>1743379784930</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743379784930</updated>
+    </task>
+    <task id="LOCAL-00007" summary="file updates">
+      <option name="closed" value="true" />
+      <created>1743380660781</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1743380660781</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,6 +267,8 @@
     <MESSAGE value="update files" />
     <MESSAGE value="file update" />
     <MESSAGE value="move package json" />
-    <option name="LAST_COMMIT_MESSAGE" value="move package json" />
+    <MESSAGE value="update package.json" />
+    <MESSAGE value="file updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="file updates" />
   </component>
 </project>
