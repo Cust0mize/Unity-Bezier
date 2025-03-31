@@ -1,0 +1,11 @@
+{
+  "name": "com.cust0mize.bezier",
+  "version": "1.0.0",
+  "displayName": "Bezier Curves for Unity",
+  "unity": "2020.3",
+  "files": [ "Assets/Scripts/*" ],
+  "author": {
+    "name": "Cust0mize",
+    "url": "https://github.com/Cust0mize"
+  }
+}
