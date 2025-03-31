@@ -121,7 +121,7 @@ namespace Bezier.Scripts.Models {
         }
 
         public List<Bezier2DPoint> GetPointsToTime(float time, BezierPointType bezierPointType, float step = 0.01f) {
-            List<Bezier2DPoint> lastPoints = new();
+            List<Bezier2DPoint> lastPoints = new List<Bezier2DPoint>();
 
             if (bezierPointType == BezierPointType.Start) {
                 lastPoints.AddRange(GetPointsUpToTime(time, step));
